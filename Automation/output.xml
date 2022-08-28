@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.5 on win32)" generated="20210825 19:50:44.764" rpa="false" schemaversion="2">
+<suite id="s1" name="Automation" source="C:\Users\Vibhor\PycharmProjects\Automation">
+<suite id="s1-s1" name="TestCases" source="C:\Users\Vibhor\PycharmProjects\Automation\TestCases">
+<suite id="s1-s1-s1" name="RadioButtonsAndCheckBox" source="C:\Users\Vibhor\PycharmProjects\Automation\TestCases\RadioButtonsAndCheckBox.robot">
+<test id="s1-s1-s1-t1" name="Testing Radio Button and Check Box">
+<kw name="Start TestCase2" library="CustomKeyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210825 19:50:45.098" level="INFO">Opening browser 'chrome' to base url 'http://www.practiceselenium.com/practice-form.html'.</msg>
+<status status="PASS" starttime="20210825 19:50:45.097" endtime="20210825 19:50:49.977"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210825 19:50:49.978" endtime="20210825 19:50:50.097"/>
+</kw>
+<status status="PASS" starttime="20210825 19:50:45.097" endtime="20210825 19:50:50.098"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210825 19:50:50.098" endtime="20210825 19:50:50.098"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>practice-form</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210825 19:50:51.117" level="INFO">Page title is 'practice-form'.</msg>
+<status status="PASS" starttime="20210825 19:50:50.098" endtime="20210825 19:50:51.117"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>Female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20210825 19:50:51.118" level="INFO">Selecting 'Female' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20210825 19:50:51.117" endtime="20210825 19:50:54.216"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>5</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20210825 19:50:54.216" level="INFO">Selecting '5' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20210825 19:50:54.216" endtime="20210825 19:50:57.329"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>BlackTea</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20210825 19:50:57.334" level="INFO">Selecting checkbox 'BlackTea'.</msg>
+<status status="PASS" starttime="20210825 19:50:57.332" endtime="20210825 19:51:01.585"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>oolongtea</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20210825 19:51:01.587" level="INFO">Selecting checkbox 'oolongtea'.</msg>
+<status status="PASS" starttime="20210825 19:51:01.586" endtime="20210825 19:51:05.763"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>oolongtea</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20210825 19:51:05.765" level="INFO">Verifying checkbox 'oolongtea' is selected.</msg>
+<status status="PASS" starttime="20210825 19:51:05.764" endtime="20210825 19:51:08.842"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>BlackTea</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20210825 19:51:08.842" level="INFO">Unselecting checkbox 'BlackTea'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210825 19:51:33.246" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+</msg>
+<status status="FAIL" starttime="20210825 19:51:21.050" endtime="20210825 19:51:33.247"/>
+</kw>
+<msg timestamp="20210825 19:51:33.247" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+</msg>
+<msg timestamp="20210825 19:51:33.295" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+</msg>
+<status status="FAIL" starttime="20210825 19:51:08.842" endtime="20210825 19:51:33.296"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>BlackTea</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20210825 19:51:33.296" endtime="20210825 19:51:33.296"/>
+</kw>
+<kw name="Finish TestCase" library="CustomKeyword" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210825 19:51:33.298" endtime="20210825 19:51:36.342"/>
+</kw>
+<status status="PASS" starttime="20210825 19:51:33.297" endtime="20210825 19:51:36.344"/>
+</kw>
+<status status="FAIL" starttime="20210825 19:50:45.096" endtime="20210825 19:51:36.344">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+</status>
+</test>
+<status status="FAIL" starttime="20210825 19:50:44.804" endtime="20210825 19:51:36.348"/>
+</suite>
+<status status="FAIL" starttime="20210825 19:50:44.802" endtime="20210825 19:51:36.355"/>
+</suite>
+<status status="FAIL" starttime="20210825 19:50:44.766" endtime="20210825 19:51:36.359"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Automation">Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Automation.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="RadioButtonsAndCheckBox">Automation.TestCases.RadioButtonsAndCheckBox</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210825 19:51:33.247" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+</msg>
+</errors>
+</robot>
+0" fail="1" skip="0" id="s1" name="Automation">Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Automation.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="RadioButtonsAndCheckBox">Automation.TestCases.RadioButtonsAndCheckBox</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210825 19:50:46.762" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=92.0.4515.159)
+</msg>
+</errors>
+</robot>

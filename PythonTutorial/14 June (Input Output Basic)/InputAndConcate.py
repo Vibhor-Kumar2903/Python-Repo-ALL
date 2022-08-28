@@ -1,0 +1,5 @@
+print("Enter name :: ")
+name = input()
+print("Enter age :: ")
+age = input()
+print(name+" is "+age+" years old.")
